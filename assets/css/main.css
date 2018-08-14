@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1.375rem;
+  outline: none;
+  border: none;
+  color: var(--text-color);
+}
+body {
+  text-align: center;
+}
+:root {
+  --main-color: #e74c3c;
+  --text-color: #222f3e;
+  --green-color: #27ae60;
+  --yellow-color: #f39c12;
+  --red-color: #c0392b;
+}
+div.container {
+  width: 540px;
+  display: inline-block;
+  text-align: left;
+  padding: 1.5rem 0;
+@media (max-width: 600px) {
+  div.container {
+    width: 90%;
+  }
+}
+
+div.container div.row {
+  display: block;
+  overflow: auto;
+  clear: both;
+  width: 100%;
+}
+div.container div.logo_top {
+  margin-bottom: 3rem;
+}
+div.container div.logo_top, div.container div.logo_top svg, div.container div.logo_top h1 {
+  display: block;
+  float: left;
+  color: var(--main-color);
+  fill: var(--main-color);
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+div.container div.logo_top svg {
+  margin-right: 0.25rem;
+}
+div.container div.logo_top svg,div.container div.logo_top svg path {
+  width: auto;
+  height: 1.5rem;
+}
+
+div.row div.progress_bar {
+  width: 100%;
+  height: 0.75rem;
+  background-color: var(--text-color);
+}
+div.row div.progress_bar div.progress {
+  display: block;
+  float: left;
+  width: 25%;
+  height: 0.75rem;
+  background-color: var(--green-color);
+  transition: width 0.25s;
+}
+div.row.add_todo_item {
+  margin-top: 1rem;
+  position: relative;
+  background-color: #e8eaed;
+}
+div.row.add_todo_item input::placeholder {
+  color: #8b8e94;
+}
+div.row.add_todo_item input {
+  width: calc(100% - 2.5rem);
+  line-height: 1;
+  padding: 0.5rem 0.75rem;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  height: 2.5rem;
+  padding-right: 0;
+  font-size: 1.125rem;
+}
+div.row.add_todo_item button, div.row.todo_item button {
+  width: 1rem;
+  height: 1rem;
+  float: left;
+  display: block;
+  background-color: transparent;
+  fill: var(--text-color);
+  cursor: pointer;
+  display: inline-block;
+  margin: 0.75rem;
+  font-size: 0;
+}
+div.row.add_todo_item button:hover, div.row.todo_item button:hover {
+  fill: var(--main-color);
+}
+div.row.add_todo_item button svg, div.row.todo_item button svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+div.row.todo_item {
+  line-height: 1;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  min-height: 2.5rem;
+  margin-top: 1rem;
+  position: relative;
+  background-color: #e8eaed;
+}
+div.row.todo_item p {
+  width: calc(100% - 5.625rem);
+  padding: 0.5rem 0.75rem;
+  padding-right: 0;
+  line-height: 1.5rem;
+  font-size: 1.125rem;
+  display: block;
+  float: left;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  div.row.todo_item {
+    text-align: center;
+  }
+  div.row.todo_item p {
+    text-align: left;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+  }
+  div.row.todo_item button {
+    display: inline-block;
+    float: none;
+  }
+}
+
+div.row.todo_item button {
+  margin: 0.75rem 0.375rem;
+}
+div.row.todo_item button.remove_todo_item svg {
+  width: 0.8rem;
+}
+div.row.todo_item button.remove_todo_item {
+  fill: var(--main-color);
+}
+div.row.todo_item button.edit_todo_item {
+  fill: var(--yellow-color);
+}
+div.row.todo_item button.finished_todo_item {
+  fill: var(--green-color);
+}
+div.todo_item_list {
+  margin-bottom: 1rem;
+  display: block;
+  overflow: auto;
+}
+div.row.clear_meter {
+  text-align: center;
+}
+div.row.clear_meter button {
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+div.row.clear_meter button:hover {
+  color: var(--main-color);
+}
