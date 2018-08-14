@@ -1,2 +1,2 @@
 # blaze
-A simple online to-do list application.
+online todo app at [xtrp.github.io/blaze](https://xtrp.github.io/blaze)
