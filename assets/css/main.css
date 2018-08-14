@@ -22,6 +22,7 @@ div.container {
   display: inline-block;
   text-align: left;
   padding: 1.5rem 0;
+}
 @media (max-width: 600px) {
   div.container {
     width: 90%;
@@ -61,10 +62,10 @@ div.row div.progress_bar {
 div.row div.progress_bar div.progress {
   display: block;
   float: left;
-  width: 25%;
+  width: 0%;
   height: 0.75rem;
   background-color: var(--green-color);
-  transition: width 0.25s;
+  transition: width 0.5s;
 }
 div.row.add_todo_item {
   margin-top: 1rem;
