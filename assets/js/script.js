@@ -15,6 +15,7 @@ $("div.row.add_todo_item button").on("click",function(){
 });
 $("div.row.clear_meter button").on("click",function(){
   finished_todo_items = 0;
+  push_to_local_storage();
   update_todo_meter();
 });
 function update_todo_meter(){
