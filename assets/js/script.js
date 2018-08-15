@@ -17,6 +17,7 @@ function update_todo_meter(){
 }
 function remove_item(item){
   $(item).parent().remove();
+  update_todo_meter();
 }
 function edit_item(item){
   $(item).prev().prev()[0].contentEditable = "true";
